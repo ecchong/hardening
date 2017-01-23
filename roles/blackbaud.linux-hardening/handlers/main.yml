@@ -13,8 +13,8 @@
     name: "{{ ssh_service }}"
     state: restarted
 
-- name: reload sysctl.conf
-  command: /sbin/sysctl -p
+#- name: reload sysctl.conf
+#  command: /sbin/sysctl -p
 
 - name: flush routes
   command: /sbin/sysctl -w net.ipv4.route.flush=1

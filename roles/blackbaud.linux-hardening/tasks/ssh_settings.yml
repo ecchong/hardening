@@ -33,14 +33,16 @@
     dest: /etc/ssh/sshd_config
     state: present
     regexp: '^PermitRootLogin'
-    line: 'PermitRootLogin no'
+#    line: 'PermitRootLogin no'
+    line: 'PermitRootLogin yes'
 
 - name: Disable SSH Root Login
   lineinfile:
     dest: /etc/ssh/sshd_config
     state: present
     regexp: '^PermitUserEnvironment'
-    line: 'PermitUserEnvironment no'
+#    line: 'PermitUserEnvironment no'
+    line: 'PermitUserEnvironment yes'
 
 - name: Use Only Approved Cipher in Counter Mode
   lineinfile:
