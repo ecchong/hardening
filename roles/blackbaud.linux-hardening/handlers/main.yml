@@ -13,9 +13,9 @@
     name: "{{ ssh_service }}"
     state: restarted
 
-#- name: reload sysctl.conf
+- name: reload sysctl.conf
 #  command: /sbin/sysctl -p
-   command: /sbin/sysctl -p -e
+  command: /sbin/sysctl -p -e
 
 - name: flush routes
   command: /sbin/sysctl -w net.ipv4.route.flush=1
