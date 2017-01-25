@@ -1,5 +1,5 @@
 ---
-- hosts: ootest01
+- hosts: linux
   tasks:
 
   - name: Shutdown firewall
