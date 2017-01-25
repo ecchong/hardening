@@ -68,7 +68,7 @@
 - name: Set SSH Banner
   lineinfile:
     dest: /etc/ssh/sshd_config
-    state: absent
+    state: present
 #    regexp: '^#Banner'
     line: 'Banner /etc/issue.net'
 
