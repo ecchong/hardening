@@ -7,8 +7,3 @@
       name: firewalld
       state: stopped
       enabled: false
-
-  - name: Install insecure pkgs
-    yum:
-      name: telnet
-      state: installed
