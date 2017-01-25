@@ -1,0 +1,5 @@
+- name: Check firewall status
+  service:
+    name: firewalld
+    state: started
+    enabled: true

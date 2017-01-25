@@ -1,0 +1,14 @@
+---
+- hosts: ootest01
+  tasks:
+
+  - name: Shutdown firewall
+    service:
+      name: firewalld
+      state: stopped
+      enabled: false
+
+  - name: Install insecure pkgs
+    yum:
+      name: telnet
+      state: installed
