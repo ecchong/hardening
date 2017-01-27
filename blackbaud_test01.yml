@@ -1,4 +1,0 @@
----
-- hosts: ootest01
-  roles:
-    - blackbaud.linux-hardening

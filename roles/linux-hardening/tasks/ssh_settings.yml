@@ -76,3 +76,6 @@
   command: /bin/true
   notify:
     - restart ssh
+# Don't display service restart as change
+  changed_when: false
+

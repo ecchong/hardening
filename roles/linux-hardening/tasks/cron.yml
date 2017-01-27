@@ -56,6 +56,9 @@
     mode: og-rwx
     owner: root
     group: root
+# Don't display service restart as change
+  changed_when: false
+
 
 - name: Restrict cron to Authorized Users
   file:
@@ -64,3 +67,6 @@
     mode: og-rwx
     owner: root
     group: root
+# Don't display service restart as change
+  changed_when: false
+

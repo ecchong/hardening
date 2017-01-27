@@ -7,15 +7,28 @@
   service:
     name: "{{ ntp_service }}"
     state: restarted
+# Don't display service restart as change
+  changed_when: false
 
 - name: restart ssh
   service:
     name: "{{ ssh_service }}"
     state: restarted
+# Don't display service restart as change
+  changed_when: false
+
+- debug:
+    msg: "This is {{ ssh_result }}"
 
 - name: reload sysctl.conf
 #  command: /sbin/sysctl -p
   command: /sbin/sysctl -p -e
+  register: output
+# Don't display service restart as change
+  changed_when: false
 
 - name: flush routes
   command: /sbin/sysctl -w net.ipv4.route.flush=1
+  register: output
+# Don't display service restart as change
+  changed_when: false

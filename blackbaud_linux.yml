@@ -1,4 +1,0 @@
----
-- hosts: linux
-  roles:
-    - blackbaud.linux-hardening

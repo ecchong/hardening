@@ -1,0 +1,4 @@
+---
+- hosts: ootest01
+  roles:
+    - linux-hardening

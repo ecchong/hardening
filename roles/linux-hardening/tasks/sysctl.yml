@@ -25,3 +25,6 @@
   notify:
     - reload sysctl.conf
     - flush routes
+# Don't display reload sysctl as change
+  changed_when: false
+
