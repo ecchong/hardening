@@ -1,0 +1,4 @@
+---
+- hosts: cloudforms
+  roles:
+    - linux-hardening
