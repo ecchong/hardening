@@ -1,4 +1,4 @@
 ---
-- hosts: linux
+- hosts: tag_Department_linux
   roles:
     - linux-hardening
